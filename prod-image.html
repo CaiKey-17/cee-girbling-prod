@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -132,11 +133,11 @@ font-size: 30px;
     <a href="#" class="dropdown-toggle">MY COURSE</a>
     <div class="dropdown-submenu">
         <a href="online.html">Online</a>
-        <a href="offlineb.html">Offline</a>
+        <a href="offline.html">Offline</a>
     </div>
     <a href="#" class="dropdown-toggle">SERVICES</a>
     <div class="dropdown-submenu">
-        <a href="service3.html">Sản Xuất Hình Ảnh</a>
+        <a href="#">Sản Xuất Hình Ảnh</a>
         <a href="service2.html">Sản Xuất Video</a>
             
     </div>
@@ -238,7 +239,7 @@ font-size: 30px;
                 <!-- Dropdown menu -->
                 <div class="dropdown">
                     <a href="online.html">Online</a>
-                    <a href="offlineb.html">Offline</a>
+                    <a href="offline.html">Offline</a>
                 </div>
             </div>
             <div class="Header_container__j8FMG">
@@ -246,7 +247,7 @@ font-size: 30px;
                 <div class="Header_effectDecorationLineT__ya3fj"></div>
                 <!-- Dropdown menu -->
                 <div class="dropdown">
-                    <a href="service3.html">Sản Xuất Hình Ảnh</a>
+                    <a href="#">Sản Xuất Hình Ảnh</a>
                         
                     <a href="service2.html">Sản Xuất Video</a>
                         
@@ -369,20 +370,256 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
+
+<style>   
+    @font-face {
+   font-family: 'Geomanist-Regular';
+   src: url('fonts/Geomanist-Regular.otf') format('truetype'),
+}
+   </style>  
 <style>
-    html, body {
-      margin: 0;
-      height: 100%;
-      overflow: auto; /* Cho phép cuộn trang */
-    }
-  
-    img {
-      display: block;
-      width: 100%;
-      height: auto; /* Để chiều cao tự động theo tỷ lệ của ảnh */
-    }
-  </style>
-  
-  
-  <img src="data/offlinelu.jpeg" alt="Description of SVG" loading="lazy">
-  
+.body {
+   background-color: black;
+}
+
+
+.container {
+   max-width: 100%;
+   width: 100%;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   background-color: #000;
+   color: rgb(255, 255, 255);
+   padding:115px;
+   gap: 20px;
+}
+
+.kiki {
+   display: flex;
+   padding: 20px;
+font-family: 'Geomanist-Regular', sans-serif;
+   letter-spacing: 0.5px;
+}
+
+.container li,
+strong {
+   margin-bottom: 15px;
+   font-size: 20px;
+}
+
+.text-section,
+.image-section {
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   overflow: hidden;
+}
+
+
+.text-section {
+   padding: 40px;
+}
+
+.text-section h1 {
+   font-size: 39px;
+   margin-bottom: 20px;
+           text-align: center;
+color: antiquewhite;
+       font-weight: bold;
+}
+
+.text-section p {
+   font-size: 20px;
+   line-height: 1.6;
+   margin-bottom: 40px;
+}
+
+.buttons {
+   display: flex;
+   gap: 20px;
+}
+
+.buttons a {
+   padding: 12px 24px;
+   text-decoration: none;
+   border: 2px solid;
+   font-weight: bold;
+   text-align: center;
+   display: inline-block;
+   min-width: 150px;
+   border-color: rgb(255, 255, 255);
+   color: rgb(255, 255, 255);
+   background-color: #000;
+   margin-right: 5px;
+   transition: 0.25s;
+   border-radius: 8px
+}
+
+.buttons a:hover {
+   transform: scale(0.95);
+   background-color: rgb(205, 205, 205);
+   color: #000
+}
+
+.image-section {
+   align-items: center;
+}
+
+.image-section img {
+   width: 90%;
+   height: auto;
+   object-fit: cover;
+   transition: 0.5s;
+}
+
+.image-section:hover img {
+   transform: scale(1.2);
+}
+
+.container:nth-child(odd) .text-section {
+   order: 1;
+}
+
+.container:nth-child(odd) .image-section {
+   order: 2;
+}
+
+.container:nth-child(even) .text-section {
+   order: 2;
+}
+
+.container:nth-child(even) .image-section {
+   order: 1;
+}
+
+
+@media (max-width: 1171px) {
+   .kiki {
+       flex-direction: column;
+   }
+.text-section h1{
+               font-size: 50px;
+       }
+   .text-section {
+       order: 2;
+       padding: 20px;
+   }
+
+   .image-section {
+       order: 1;
+       margin-bottom: 20px;
+   }
+
+   .image-section img {
+       width: 100%;
+   }
+
+   .container .text-section {
+       order: 2 !important;
+   }
+
+   .container .image-section {
+       order: 1 !important;
+   }
+       
+       
+       
+      .modal{
+           padding-top: 400px;
+       }
+       .modal-content {
+               width: 780px;
+       }
+       
+       
+       
+        .container li,
+strong {
+   margin-bottom: 15px;
+   font-size: 40px;
+}
+}
+
+
+
+
+
+
+.kyky .dropdown {
+   background-color: black;
+}
+
+@media (max-width: 1170px) {
+   .Header_dropdownContent {
+       background-color: black;
+   }
+}
+</style>
+
+
+
+
+<div class="container">
+<div class="kiki">
+   <div class="text-section">
+       <h1>LOOKBOOK/CATALOGUE</h1>
+       <ul>
+           <li>Casual clothing: 400.000đ /look - 3 ảnh chỉnh sửa cho mỗi look và giao toàn bộ ảnh gốc (Tối thiểu 4
+               look/buổi chụp)</li>
+           <li>Design clothing: 800.000đ/look - 5 ảnh chỉnh sửa cho mỗi look và giao toàn bộ ảnh gốc (Tối thiểu 2
+               look/buổi chụp)</li>
+       </ul>
+
+   </div>
+   <div class="image-section">
+       <img src="https://images-pw.pixieset.com/elementfield/028005563/KIN02302-7914fd9a-2500.jpg" alt="Image A">
+
+   </div>
+</div>
+</div>
+<div class="container">
+<div class="kiki">
+   <div class="text-section">
+       <h1>CAMPAIGN</h1>
+       <ul>
+           <li>Indoor: 1.999.000đ/h (10 ảnh chỉnh sửa) cho tiếng đầu tiên, book từ tiếng thứ 2 giảm còn
+               1.499.000đ/h (mỗi tiếng tiếp theo + 5 ảnh chỉnh sửa)</li>
+           <li>Outdoor: 2.499.000đ/h (10 ảnh chỉnh sửa) cho tiếng đầu tiên, book từ tiếng thứ 2 giảm còn
+               1.999.000đ/h (mỗi tiếng tiếp theo + 5 ảnh chỉnh sửa)</li>
+       </ul>
+       <p>**Chi phí chưa bao gồm phí thuê đèn (nếu cần)</p>
+
+   </div>
+   <div class="image-section">
+       <img src="https://images-pw.pixieset.com/elementfield/555625563/IMG_6568-693f5b5a-2500.png" alt="Image A">
+   </div>
+</div>
+</div>
+<div class="container">
+<div class="kiki">
+   <div class="text-section">
+       <h1>PESONAL</h1>
+       <strong>CÁ NHÂN:</strong>
+       <ul>
+           <li><strong>Portrait</strong>: 2.499.000đ/buổi gồm 15 ảnh chỉnh sửa và toàn bộ ảnh gốc (thời gian chụp
+               - 1 tiếng 30 phút)</li>
+           <li><strong>Fashion</strong>: 3.499.000đ/buổi gồm 15 ảnh chỉnh sửa và toàn bộ ảnh gốc (thời gian chụp
+               1 tiếng 30 phút)</li>
+       </ul>
+       <strong>CẶP ĐÔI:</strong>
+       <ul>
+           <li><strong>Loại 1</strong>: 3.499.000đ/buổi gồm 15 ảnh chỉnh sửa và toàn bộ ảnh gốc (thời gian chụp 1
+               tiếng 30 phút)</li>
+           <li><strong>Loại 2</strong>: 3.999.000đ/buổi gồm 30 ảnh chỉnh sửa và toàn bộ ảnh gốc (thời gian chụp 3
+               tiếng)</li>
+       </ul>
+       <p>*Chi phí chỉ gồm chụp, chưa kèm phí studio, phí thêm đèn (nếu cần)</p>
+
+
+   </div>
+   <div class="image-section">
+       <img src="https://images-pw.pixieset.com/elementfield/PkW7oWn/k-8bbfc2c8-1500.png" alt="Image A">
+
+   </div>
+</div>
+</div>
