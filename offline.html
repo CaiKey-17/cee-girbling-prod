@@ -427,16 +427,20 @@ document.addEventListener('DOMContentLoaded', function() {
     .ck-price {
       margin-top: 20px;
       text-align: center;
-      font-size: 30px;
+      font-size: 40px;
       color: red;
     }
     .ck-price del {
-      color: #fff;
-      text-decoration: line-through;
-    }
-    .ck-price span {
-      color: #F2B400;
-    }
+          color: #aaa;   
+          text-decoration: line-through;
+      }
+  
+      .ck-price span {
+        color: #FFD700;           /* vàng gold */
+  font-weight: bold;
+  text-shadow: 0 0 6px #FFD700, 
+               0 0 10px #FFA500;
+      }
     .ck-feedback {
       margin-top: 30px;
       text-align: center;
@@ -458,9 +462,10 @@ document.addEventListener('DOMContentLoaded', function() {
       margin: 10px 0;
     }
     .ck-red-item {
-      color: red;
+      color: #00FA9A;
       padding-left: 60px;
-      text-decoration: none;
+      list-style-type: none;
+
     }
     @media (max-width: 1171px) {
       .ck-container {

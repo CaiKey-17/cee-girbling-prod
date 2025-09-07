@@ -562,6 +562,54 @@ document.addEventListener('DOMContentLoaded', function() {
                                                 <div class="ck">
                                                     <!----> <!---->
                                                     <div class="gallery">
+                                                        <img src="https://images-pw.pixieset.com/elementfield/dd6yDvm/Evoto_0388final-68d92277-1000.jpg"
+                                                            class="thumbnail" onclick="openModal(this)">
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="artists__artist__text">
+                                                Couple
+                                            </div>
+                                            <p class="artists__artist__disciplines">
+                                                Photographer &amp; Director
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="artists__artist">
+                                        <div>
+                                            <div class="object-cover artists__artist__asset" cache-size="pdf"
+                                                style="will-change: transform; transform-origin: center center; transform: scale(0.999) translateZ(0px);">
+                                                <!---->
+                                                <div class="ck">
+                                                    <!----> <!---->
+                                                    <div class="gallery">
+                                                        <img src="https://images-pw.pixieset.com/elementfield/GGMrM3v/final9409final1-c9592928-1000.jpg"
+                                                            class="thumbnail" onclick="openModal(this)">
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="artists__artist__text">
+                                                Classic
+                                            </div>
+                                            <p class="artists__artist__disciplines">
+                                                Photographer &amp; Director
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="artists__artist">
+                                        <div>
+                                            <div class="object-cover artists__artist__asset" cache-size="pdf"
+                                                style="will-change: transform; transform-origin: center center; transform: scale(0.999) translateZ(0px);">
+                                                <!---->
+                                                <div class="ck">
+                                                    <!----> <!---->
+                                                    <div class="gallery">
                                                         <img src="//images-pw.pixieset.com/elementfield/187815563/IMG_6568-1ab60dad-1000.png"
                                                             class="thumbnail" onclick="openModal(this)">
 
@@ -877,6 +925,52 @@ document.addEventListener('DOMContentLoaded', function() {
                                     </div>
 
 
+                                    <div id="modalH" class="modal">
+                                        <span class="close" onclick="closeModal()">&times;</span>
+                                        <img class="modal-content" id="imgH">
+                                        <div id="caption"></div>
+                                        <button class="prev" onclick="changeImageModal('modalH', -1)">&#10094;</button>
+                                        <button class="next" onclick="changeImageModal('modalH', 1)">&#10095;</button>
+                                        <div id="thumbnail-container">
+                                            <img src="https://images-pw.pixieset.com/elementfield/dd6yDvm/Evoto_0388final-68d92277-1000.jpg"
+                                                class="thumbnail" onclick="changeImage(this)">
+                                            <img src="https://images-pw.pixieset.com/elementfield/dd6yDvm/Evoto_0356final-9a6ea084-1000.jpg"
+                                                class="thumbnail" onclick="changeImage(this)">
+                                            <img src="https://images-pw.pixieset.com/elementfield/dd6yDvm/Evoto_0402final-3babe694-1000.jpg"
+                                                class="thumbnail" onclick="changeImage(this)">
+                                            <img src="https://images-pw.pixieset.com/elementfield/dd6yDvm/fn72175final-79206bb4-1000.jpg"
+                                                class="thumbnail" onclick="changeImage(this)">
+                                            <img src="https://images-pw.pixieset.com/elementfield/dd6yDvm/fn73218final-8b97e947-1000.jpg"
+                                                class="thumbnail" onclick="changeImage(this)">
+                                            <img src="https://images-pw.pixieset.com/elementfield/dd6yDvm/fn70861final-c91c6467-1000.jpg"
+                                                class="thumbnail" onclick="changeImage(this)">
+                                        </div>
+                                    </div>
+
+                                    <div id="modalJ" class="modal">
+                                        <span class="close" onclick="closeModal()">&times;</span>
+                                        <img class="modal-content" id="imgJ">
+                                        <div id="caption"></div>
+                                        <button class="prev" onclick="changeImageModal('modalJ', -1)">&#10094;</button>
+                                        <button class="next" onclick="changeImageModal('modalJ', 1)">&#10095;</button>
+                                        <div id="thumbnail-container">
+                                            <img src="https://images-pw.pixieset.com/elementfield/GGMrM3v/final9409final1-c9592928-1000.jpg"
+                                                class="thumbnail" onclick="changeImage(this)">
+                                            <img src="https://images-pw.pixieset.com/elementfield/GGMrM3v/final9341final1-d8a060eb-1000.jpg"
+                                                class="thumbnail" onclick="changeImage(this)">
+                                            <img src="https://images-pw.pixieset.com/elementfield/GGMrM3v/final9343final1-689c6f38-1000.jpg"
+                                                class="thumbnail" onclick="changeImage(this)">
+                                            <img src="https://images-pw.pixieset.com/elementfield/GGMrM3v/final9447final1-3beeabdb-1000.jpg"
+                                                class="thumbnail" onclick="changeImage(this)">
+                                            <img src="https://images-pw.pixieset.com/elementfield/GGMrM3v/final9464final1-1e3df68a-1000.jpg"
+                                                class="thumbnail" onclick="changeImage(this)">
+                                            <img src="https://images-pw.pixieset.com/elementfield/GGMrM3v/final00024final1-2a17e218-1000.jpg"
+                                                class="thumbnail" onclick="changeImage(this)">
+                                        </div>
+                                    </div>
+                                    
+                                    
+
                                 </div>
                                 <div class="fade-overlay" style="opacity: 0.001;"></div>
                             </div>
@@ -954,7 +1048,25 @@ let imageSources = {
         "https://images-pw.pixieset.com/elementfield/K58JMRy/collectb3-2b8c77d6-1000.jpg",
         "https://images-pw.pixieset.com/elementfield/K58JMRy/DSC02045-6907faf6-1000.jpg",
         "https://images-pw.pixieset.com/elementfield/K58JMRy/DSC09732-d7ba4537-1000.jpg"
+    ],
+    'modalH': [
+        "https://images-pw.pixieset.com/elementfield/dd6yDvm/Evoto_0388final-68d92277-1000.jpg",
+        "https://images-pw.pixieset.com/elementfield/dd6yDvm/Evoto_0356final-9a6ea084-1000.jpg",
+        "https://images-pw.pixieset.com/elementfield/dd6yDvm/Evoto_0402final-3babe694-1000.jpg",
+        "https://images-pw.pixieset.com/elementfield/dd6yDvm/fn72175final-79206bb4-1000.jpg",
+        "https://images-pw.pixieset.com/elementfield/dd6yDvm/fn73218final-8b97e947-1000.jpg",
+        "https://images-pw.pixieset.com/elementfield/dd6yDvm/fn70861final-c91c6467-1000.jpg"
+    ],
+    'modalJ': [
+        "https://images-pw.pixieset.com/elementfield/GGMrM3v/final9409final1-c9592928-1000.jpg",
+        "https://images-pw.pixieset.com/elementfield/GGMrM3v/final9341final1-d8a060eb-1000.jpg",
+        "https://images-pw.pixieset.com/elementfield/GGMrM3v/final9343final1-689c6f38-1000.jpg",
+        "https://images-pw.pixieset.com/elementfield/GGMrM3v/final9447final1-3beeabdb-1000.jpg",
+        "https://images-pw.pixieset.com/elementfield/GGMrM3v/final9464final1-1e3df68a-1000.jpg",
+        "https://images-pw.pixieset.com/elementfield/GGMrM3v/final00024final1-2a17e218-1000.jpg"
     ]
+
+    
 };
 
 function changeImageModal(modalId, direction) {
@@ -1001,7 +1113,16 @@ function openModal(element) {
     } else if (element.src.includes('https://images-pw.pixieset.com/elementfield/K58JMRy/DSC01995-9bb07805-1000.jpg')) {
         modalId = "modalE";
         modalImg = document.getElementById("imgE");
+    } else if (element.src.includes('https://images-pw.pixieset.com/elementfield/dd6yDvm/Evoto_0388final-68d92277-1000.jpg')) {
+        modalId = "modalH";
+        modalImg = document.getElementById("imgH");
     }
+    else if (element.src.includes('https://images-pw.pixieset.com/elementfield/GGMrM3v/final9409final1-c9592928-1000.jpg')) {
+        modalId = "modalJ";
+        modalImg = document.getElementById("imgJ");
+    }
+
+    
 
     currentModalId = modalId;  // Track which modal is currently open
     modalImg.src = element.src;
